@@ -494,6 +494,15 @@
       opacity: 0.4;
     }
 
+    .endpoint-head {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 14px 18px;
+      border-bottom: 1px solid var(--border);
+    }
+
     .endpoint-path {
       font-family: var(--mono);
       font-size: 14px;
@@ -508,6 +517,7 @@
       border: 1px solid var(--accent-dim);
       padding: 2px 8px;
       border-radius: 20px;
+      white-space: nowrap;
     }
 
     .endpoint-body {
@@ -592,6 +602,12 @@
       gap: 12px;
     }
 
+    @media (max-width: 480px) {
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
     .contact-card {
       border: 1px solid var(--border);
       border-radius: 8px;
@@ -613,6 +629,13 @@
       font-family: var(--mono);
       font-size: 14px;
       color: var(--text);
+      display: block;
+      word-break: break-word;
+      overflow-wrap: anywhere;
+    }
+
+    .contact-card {
+      min-width: 0;
     }
 
     .resume-btn {
@@ -840,7 +863,7 @@
           <span class="endpoint-status">built</span>
         </div>
         <div class="endpoint-media">
-          <img src="./assets/banner- api.png" alt="API Gateway project banner">
+          <img src="./assets/banner-api.png" alt="API Gateway project banner">
         </div>
         <div class="endpoint-body">
           <p class="endpoint-desc">Centralized API gateway with JWT auth, Redis-based rate limiting, a circuit breaker
@@ -949,13 +972,13 @@
         <div class="contact-card">
           <div class="label">Email</div>
           <!-- EMAIL: replace YOUR_EMAIL with your real address -->
-          <a href="mailto:siddhisingh5@outlook.com " data-link="email">
+          <a href="mailto:siddhisingh5@outlook.com" data-link="email">
             siddhisingh5@outlook.com
           </a>
         </div>
       </div>
       <!-- RESUME: add resume.pdf to project root — this link assumes that filename -->
-      <a href="assets/Siddhi_Singh_Backend_Resume .pdf" class="resume-btn" data-link="resume">↓ download resume</a>
+      <a href="assets/Siddhi_Singh_Backend_Resume.pdf" class="resume-btn" data-link="resume" download="Siddhi_Singh_Backend_Resume.pdf">↓ download resume</a>
     </div>
   </section>
 
