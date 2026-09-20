@@ -494,15 +494,6 @@
       opacity: 0.4;
     }
 
-    .endpoint-head {
-      display: flex;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 10px;
-      padding: 14px 18px;
-      border-bottom: 1px solid var(--border);
-    }
-
     .endpoint-path {
       font-family: var(--mono);
       font-size: 14px;
@@ -517,7 +508,6 @@
       border: 1px solid var(--accent-dim);
       padding: 2px 8px;
       border-radius: 20px;
-      white-space: nowrap;
     }
 
     .endpoint-body {
@@ -602,12 +592,6 @@
       gap: 12px;
     }
 
-    @media (max-width: 480px) {
-      .contact-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-
     .contact-card {
       border: 1px solid var(--border);
       border-radius: 8px;
@@ -629,13 +613,6 @@
       font-family: var(--mono);
       font-size: 14px;
       color: var(--text);
-      display: block;
-      word-break: break-word;
-      overflow-wrap: anywhere;
-    }
-
-    .contact-card {
-      min-width: 0;
     }
 
     .resume-btn {
@@ -708,16 +685,17 @@
 
       <h1 class="hero-title">Siddhi Singh<br><span class="accent">/backend-developer</span></h1>
       <p class="hero-sub">
-        I build scalable backend systems with Node.js, Express, MongoDB, PostgreSQL and Redis —
-        focused on authentication, real-time collaboration, background job processing, API gateways, and webhook
+        I build backend systems with Node.js, Express, MongoDB, PostgreSQL and Redis —
+        focused on authentication, real-time updates, background job processing, API gateways, and webhook
         delivery.
-        Currently looking for Backend Engineer opportunities.
+        Open to entry-level Backend Engineer roles.
       </p>
       <div class="status-row">
         <span class="badge"><span class="pulse"></span> open to work</span>
         <span class="badge">node.js</span>
         <span class="badge">express</span>
         <span class="badge">mongodb</span>
+        <span class="badge">postgresql</span>
         <span class="badge">redis</span>
         <span class="badge">docker</span>
       </div>
@@ -731,14 +709,15 @@
         <span class="section-title">about</span>
       </div>
       <div class="about-body reveal">
-        <p>Backend developer working with <strong>Node.js, Express, MongoDB and Redis</strong> — focused on
-          the infrastructure layer: authentication, job queues, webhooks, API gateways.</p>
-        <p>My projects target failure modes most CRUD apps skip: retry logic, rate limiting, queue recovery, idempotent
-          webhook delivery. Hands-on with JWT, OAuth, BullMQ, Socket.io, and circuit breakers.</p>
-        <p>Early career. These are learning-stage builds, not production systems under live traffic — but built the way
-          production systems should be.</p>
+        <p>Backend developer with a 6-month backend internship at <strong>Himritva</strong> (Jan–Jul 2025) and four
+          independent projects. I work with <strong>Node.js, Express, MongoDB, PostgreSQL and Redis</strong>, and
+          focus on the parts behind the API: authentication, job queues, webhooks, and API gateways.</p>
+        <p>My projects handle failure cases: retries with backoff, dead-letter queues, rate limiting, circuit
+          breakers, and signed webhooks. I have used JWT, OAuth, BullMQ, and Socket.io, and wrote 213 automated tests
+          (Vitest, Supertest) across five projects.</p>
+        <p>I am early in my career. The independent projects are learning builds, not production systems under live
+          traffic. MCA graduate, SNDT Women's University, 2025.</p>
       </div>
-    </div>
     </div>
   </section>
 
@@ -754,7 +733,6 @@
           <ul>
             <li>JavaScript (ES6+)</li>
             <li>SQL</li>
-            <li>HTML5 / CSS3</li>
             <li>Java</li>
           </ul>
         </div>
@@ -765,46 +743,48 @@
             <li>Socket.io</li>
             <li>JWT Authentication</li>
             <li>Google OAuth 2.0</li>
+            <li>Gemini API / Resend / ImageKit</li>
           </ul>
         </div>
         <div class="skill-group">
           <h3>Data</h3>
           <ul>
-            <li>MongoDB / Mongoose</li>
-            <li>PostgreSQL(core)</li>
-            <li>Redis</li>
+            <li>MongoDB</li>
+            <li>PostgreSQL</li>
+            <li>Redis (Upstash)</li>
           </ul>
         </div>
         <div class="skill-group">
           <h3>Architecture</h3>
           <ul>
             <li>REST API design</li>
+            <li>Multi-tenancy</li>
             <li>API Gateway</li>
             <li>RBAC</li>
             <li>Queue-based processing (BullMQ)</li>
-            <li>Webhook systems</li>
+            <li>Webhook delivery</li>
             <li>Rate limiting</li>
             <li>Circuit breaker pattern</li>
-            <li>Distributed systems basics</li>
           </ul>
         </div>
         <div class="skill-group">
           <h3>Security</h3>
           <ul>
-            <li>JWT / OAuth</li>
-            <li>bcrypt / Helmet / CORS</li>
-            <li>CSRF protection</li>
-            <li>Input validation (Zod)</li>
+            <li>JWT / OAuth 2.0</li>
+            <li>Passport.js</li>
+            <li>bcrypt / Helmet</li>
+            <li>Rate limiting</li>
             <li>HMAC verification</li>
           </ul>
         </div>
         <div class="skill-group">
-          <h3>DevOps</h3>
+          <h3>Tools &amp; Testing</h3>
           <ul>
-            <li>Docker / Docker Compose</li>
+            <li>Docker</li>
             <li>Git / GitHub</li>
             <li>Postman / Swagger</li>
-            <li>Vercel / Render / Railway</li>
+            <li>Vitest / Supertest</li>
+            <li>mongodb-memory-server</li>
           </ul>
         </div>
       </div>
@@ -818,38 +798,37 @@
         <span class="section-title">projects</span>
       </div>
 
-      <!-- PLACEHOLDER: replace every href="#" below with real GitHub repo / live demo links once pushed. -->
       <!-- Status labels: use "Live" only if actually deployed and reachable, otherwise "Built" or "In Development". Don't say "Production" unless it's handling real traffic. -->
 
       <div class="endpoint endpoint-featured reveal">
         <div class="endpoint-head">
           <span class="featured-tag">FEATURED</span>
           <span class="endpoint-path">/projectify</span>
-          <!-- PLACEHOLDER: set to "Live" only once actually deployed -->
-          <span class="endpoint-status">in development</span>
+          <span class="endpoint-status">Built</span>
         </div>
         <div class="endpoint-media">
           <img src="./assets/banner-projectify.png" alt="Projectify project banner">
         </div>
         <div class="endpoint-body">
-          <p class="endpoint-desc">Project management platform with multi-tenancy, Kanban workflows, role-based access
-            control, JWT auth, Google OAuth, and real-time updates over Socket.io.</p>
+          <p class="endpoint-desc">Built a multi-tenant task and project management platform during my backend internship
+            at Himritva. Implemented JWT auth with HttpOnly cookies, Google OAuth, workspace-level RBAC, Kanban task
+            APIs with fractional ordering, and real-time task updates over Socket.io.</p>
           <ul class="endpoint-features">
             <li>Multi-tenancy</li>
             <li>RBAC</li>
             <li>Socket.io</li>
             <li>JWT Authentication</li>
             <li>Google OAuth</li>
-            <li>Analytics</li>
+            <li>31 tests</li>
             <li>Kanban</li>
             <li>Redis</li>
           </ul>
           <div class="endpoint-stack">
             <span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">MongoDB</span><span
-              class="tag">Redis</span><span class="tag">JWT</span><span class="tag">Socket.io</span>
+              class="tag">Redis</span><span class="tag">JWT</span><span class="tag">Socket.io</span><span
+              class="tag">Vitest</span><span class="tag">Supertest</span>
           </div>
           <div class="endpoint-links">
-            <!-- INSERT PROJECTIFY GITHUB -->
             <a href="https://github.com/Siddhi561/Projectify" data-link="github">→ github</a>
 
           </div>
@@ -860,16 +839,18 @@
         <div class="endpoint-head">
           <span class="method">GATE</span>
           <span class="endpoint-path">/api-gateway</span>
-          <span class="endpoint-status">built</span>
+          <span class="endpoint-status">Built</span>
         </div>
         <div class="endpoint-media">
-          <img src="./assets/banner-api.png" alt="API Gateway project banner">
+          <img src="./assets/banner- api.png" alt="API Gateway project banner">
         </div>
         <div class="endpoint-body">
-          <p class="endpoint-desc">Centralized API gateway with JWT auth, Redis-based rate limiting, a circuit breaker
-            pattern, and request proxying.</p>
+          <p class="endpoint-desc">Built a centralized API gateway that combines JWT and API-key authentication, Redis
+            sliding-window rate limiting, a circuit breaker for upstream failures, and request proxying. Wrote 94 tests
+            covering auth, rate limits, circuit-breaker states, and proxying.</p>
           <div class="endpoint-stack">
-            <span class="tag">Node.js</span><span class="tag">Redis</span><span class="tag">Express</span>
+            <span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">Upstash Redis</span><span
+              class="tag">Vitest</span><span class="tag">Supertest</span>
           </div>
           <div class="endpoint-links">
 
@@ -883,17 +864,18 @@
         <div class="endpoint-head">
           <span class="method">QUEUE</span>
           <span class="endpoint-path">/job-queue</span>
-          <span class="endpoint-status">built</span>
+          <span class="endpoint-status">Built</span>
         </div>
         <div class="endpoint-media">
           <img src="./assets/banner-queue.png" alt="Job Queue project banner">
         </div>
         <div class="endpoint-body">
-          <p class="endpoint-desc">Background job processing service using Redis queues and BullMQ workers, with
-            retries, dead-letter queues, and PostgreSQL persistence for async email delivery.</p>
+          <p class="endpoint-desc">Built an asynchronous email delivery service that queues jobs with BullMQ and Redis and
+            returns immediately. Added priority queues, exponential-backoff retries, a dead-letter queue, and
+            PostgreSQL job tracking. Wrote 27 unit and integration tests.</p>
           <div class="endpoint-stack">
-            <span class="tag">Node.js</span><span class="tag">BullMQ</span><span class="tag">Redis</span><span
-              class="tag">PostgreSQL</span>
+            <span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">BullMQ</span><span
+              class="tag">Redis</span><span class="tag">PostgreSQL</span><span class="tag">Vitest</span>
           </div>
           <div class="endpoint-links">
 
@@ -906,16 +888,19 @@
         <div class="endpoint-head">
           <span class="method">HOOK</span>
           <span class="endpoint-path">/webhook-service</span>
-          <span class="endpoint-status">built</span>
+          <span class="endpoint-status">Built</span>
         </div>
         <div class="endpoint-media">
           <img src="./assets/banner-webhook.png" alt="Webhook Service project banner">
         </div>
         <div class="endpoint-body">
-          <p class="endpoint-desc">Webhook delivery platform with HMAC signature verification, exponential backoff
-            retries, and event persistence for third-party integrations.</p>
+          <p class="endpoint-desc">Built a webhook delivery service that queues one BullMQ job per subscriber per event, so
+            one failing subscriber does not block the others. Signed payloads with HMAC-SHA256, rejected stale requests
+            with a 5-minute timestamp window, added exponential-backoff retries, and stored delivery history in
+            MongoDB. Wrote 35 unit and integration tests.</p>
           <div class="endpoint-stack">
-            <span class="tag">Node.js</span><span class="tag">Redis</span><span class="tag">PostgreSQL</span>
+            <span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">BullMQ</span><span
+              class="tag">Redis</span><span class="tag">MongoDB</span><span class="tag">Vitest</span>
           </div>
           <div class="endpoint-links">
 
@@ -934,14 +919,14 @@
           <img src="./assets/banner-ai.png" alt="AI Interview Prep project banner">
         </div>
         <div class="endpoint-body">
-          <p class="endpoint-desc">AI-assisted interview preparation platform using the Google Gemini API for
-            personalized technical question generation, with session management and auth.</p>
+          <p class="endpoint-desc">Built an interview preparation platform that uses the Gemini API to generate
+            personalized questions, with authentication and session management. Wrote 26 tests covering Gemini
+            mocking, malformed AI output, and authorization.</p>
           <div class="endpoint-stack">
             <span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">Gemini API</span><span
-              class="tag">MongoDB</span>
+              class="tag">MongoDB</span><span class="tag">Vitest</span>
           </div>
           <div class="endpoint-links">
-            <!-- INSERT AI INTERVIEW GITHUB -->
             <a href="https://github.com/Siddhi561/AI_InterviewPrep" data-link="github">→ github</a>
 
           </div>
@@ -977,8 +962,7 @@
           </a>
         </div>
       </div>
-      <!-- RESUME: add resume.pdf to project root — this link assumes that filename -->
-      <a href="assets/Siddhi_Singh_Backend_Resume.pdf" class="resume-btn" data-link="resume" download="Siddhi_Singh_Backend_Resume.pdf">↓ download resume</a>
+      <a href="assets/Siddhi_Singh_Backend_Resume.pdf" class="resume-btn" data-link="resume">↓ download resume</a>
     </div>
   </section>
 
@@ -1020,7 +1004,7 @@
           l1.textContent = 'whoami';
           l2wrap.style.visibility = 'visible'; l2.textContent = 'siddhi_singh — backend developer';
           l3wrap.style.visibility = 'visible'; l3.textContent = 'status --role';
-          l4wrap.style.visibility = 'visible'; l4.textContent = 'fresher · actively building · open to opportunities';
+          l4wrap.style.visibility = 'visible'; l4.textContent = 'early-career · actively building · open to opportunities';
           return;
         }
 
@@ -1031,7 +1015,7 @@
               l3wrap.style.visibility = 'visible';
               typeInto(l3, 'status --role', 55, function () {
                 l4wrap.style.visibility = 'visible';
-                typeInto(l4, 'fresher · actively building · open to opportunities', 22);
+                typeInto(l4, 'early-career · actively building · open to opportunities', 22);
               });
             }, 300);
           });
