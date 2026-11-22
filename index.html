@@ -4,8 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Siddhi Singh — Backend Developer</title>
-  <meta name="description" content="Backend developer portfolio — Node.js, Express, queues, auth systems.">
+  <title>Siddhi Singh — Backend-Focused Full Stack Developer</title>
+  <meta name="description"
+    content="Siddhi Singh — backend-focused full stack developer. Node.js, Express, MongoDB, PostgreSQL, Redis. 6-month full stack internship, 5 projects, 213 automated tests.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -460,14 +461,6 @@
       border-color: var(--accent);
     }
 
-    .endpoint-head {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      padding: 12px 18px;
-      border-bottom: 1px solid var(--border);
-    }
-
     /* ---------- Media / gif slot ---------- */
     .endpoint-media {
       aspect-ratio: 16 / 8;
@@ -479,14 +472,6 @@
       justify-content: center;
       flex-direction: column;
       gap: 6px;
-      overflow: hidden;
-    }
-
-    .endpoint-media img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
     }
 
     .endpoint-media span {
@@ -500,6 +485,25 @@
     .endpoint-media .media-icon {
       font-size: 20px;
       opacity: 0.4;
+    }
+
+    .endpoint-head {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 14px 18px;
+      border-bottom: 1px solid var(--border);
+      flex-wrap: wrap;
+    }
+
+    .method {
+      font-family: var(--mono);
+      font-size: 12px;
+      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: 4px;
+      background: rgba(232, 163, 61, 0.12);
+      color: var(--accent);
     }
 
     .endpoint-path {
@@ -516,6 +520,13 @@
       border: 1px solid var(--accent-dim);
       padding: 2px 8px;
       border-radius: 20px;
+    }
+
+    .endpoint-media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
     }
 
     .endpoint-body {
@@ -556,40 +567,6 @@
     }
 
     .endpoint-links a:hover {
-      color: var(--accent);
-    }
-
-    .endpoint-featured {
-      border: 1px solid var(--accent-dim);
-      box-shadow: 0 0 0 1px rgba(232, 163, 61, 0.15);
-    }
-
-    .featured-tag {
-      font-family: var(--mono);
-      font-size: 11px;
-      font-weight: 700;
-      color: var(--bg);
-      background: var(--accent);
-      padding: 2px 8px;
-      border-radius: 4px;
-      letter-spacing: 0.04em;
-    }
-
-    .endpoint-features {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-      gap: 6px 16px;
-      margin-bottom: 14px;
-    }
-
-    .endpoint-features li {
-      list-style: none;
-      font-size: 13.5px;
-      color: var(--text-dim);
-    }
-
-    .endpoint-features li::before {
-      content: "✔ ";
       color: var(--accent);
     }
 
@@ -652,6 +629,179 @@
       font-size: 12px;
       color: var(--text-faint);
     }
+
+    /* ---------- Resume update: stats, roles, education ---------- */
+    .stat-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+      margin-top: 28px;
+    }
+
+    .stat {
+      background: var(--bg-raised);
+      padding: 16px 18px;
+    }
+
+    .stat-num {
+      font-family: var(--mono);
+      font-size: 26px;
+      font-weight: 700;
+      color: var(--accent);
+      line-height: 1.2;
+    }
+
+    .stat-label {
+      font-size: 13px;
+      color: var(--text-dim);
+    }
+
+    .reveal-stagger>*:nth-child(7) {
+      transition-delay: 0.39s;
+    }
+
+    .reveal-stagger>*:nth-child(8) {
+      transition-delay: 0.45s;
+    }
+
+    .reveal-stagger>*:nth-child(9) {
+      transition-delay: 0.51s;
+    }
+
+    .role {
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: var(--bg-raised);
+      padding: 20px 22px;
+      margin-bottom: 16px;
+    }
+
+    .role-top {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 4px;
+    }
+
+    .role-title {
+      font-family: var(--mono);
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    .role-company {
+      color: var(--accent);
+      font-weight: 500;
+    }
+
+    .role-date {
+      font-family: var(--mono);
+      font-size: 12px;
+      color: var(--text-faint);
+      padding-top: 4px;
+    }
+
+    .role-sub {
+      font-size: 14px;
+      color: var(--text-dim);
+      margin: 8px 0 12px;
+    }
+
+    .points {
+      list-style: none;
+    }
+
+    .points li {
+      position: relative;
+      padding-left: 18px;
+      margin-bottom: 7px;
+      font-size: 14.5px;
+      color: var(--text-dim);
+    }
+
+    .points li::before {
+      content: "\203A";
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+    }
+
+    .endpoint-body .points {
+      margin-bottom: 14px;
+    }
+
+    .endpoint-note {
+      font-size: 13px;
+      color: var(--text-faint);
+      font-family: var(--mono);
+      margin-bottom: 12px;
+    }
+
+
+
+    .endpoint-status.ok {
+      color: var(--ok);
+      border-color: rgba(74, 222, 128, 0.45);
+    }
+
+    .endpoint:hover .endpoint-status.ok {
+      color: var(--ok);
+      border-color: var(--ok);
+    }
+
+    .endpoint-links a[href="#"] {
+      opacity: 0.4;
+      cursor: not-allowed;
+    }
+
+    .edu-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+
+    @media (max-width: 640px) {
+      .edu-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .edu-card {
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: var(--bg-raised);
+      padding: 18px;
+    }
+
+    .edu-card.wide {
+      grid-column: 1 / -1;
+    }
+
+    .edu-degree {
+      font-family: var(--mono);
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 4px;
+    }
+
+    .edu-school {
+      font-size: 14px;
+      color: var(--text-dim);
+    }
+
+    .edu-meta {
+      font-family: var(--mono);
+      font-size: 12px;
+      color: var(--accent);
+      margin-top: 8px;
+    }
   </style>
 </head>
 
@@ -662,24 +812,26 @@
 
   <nav>
     <div class="wrap">
-      <div class="nav-brand">Siddhi<span>Singh</span></div>
+      <div class="nav-brand">siddhi<span>561</span></div>
       <ul class="nav-links">
-        <li><a href="#about">about</a></li>
+        <li><a href="#hero">about</a></li>
         <li><a href="#skills">skills</a></li>
+        <li><a href="#experience">experience</a></li>
         <li><a href="#projects">projects</a></li>
+        <li><a href="#education">education</a></li>
         <li><a href="#contact">contact</a></li>
       </ul>
     </div>
   </nav>
 
-  <header class="hero">
+  <header class="hero" id="hero">
     <div class="wrap">
       <div class="terminal">
         <div class="terminal-bar">
           <div class="dot"></div>
           <div class="dot"></div>
           <div class="dot"></div>
-          <span class="terminal-title">~/siddhiSingh — zsh</span>
+          <span class="terminal-title">~/siddhi561 — zsh</span>
         </div>
         <div class="terminal-body" id="terminal-body">
           <div class="line"><span class="prompt">$</span> <span id="t-line1"></span></div>
@@ -691,43 +843,53 @@
         </div>
       </div>
 
-      <h1 class="hero-title">Siddhi Singh<br><span class="accent">/backend-developer</span></h1>
+      <h1 class="hero-title">Siddhi Singh<br><span class="accent">/full-stack developer</span></h1>
+
       <p class="hero-sub">
-        I build backend systems with Node.js, Express, MongoDB, PostgreSQL and Redis —
-        focused on authentication, real-time updates, background job processing, API gateways, and webhook
-        delivery.
-        Open to entry-level Backend Engineer roles.
+        I build APIs, background job systems, and authentication layers using Node.js, Express.js, MongoDB, PostgreSQL,
+        and Redis.
+
+        With a <span style="white-space:nowrap">6-months</span> full-stack internship and 5 projects built, I've worked
+        on REST APIs, JWT/OAuth authentication, multi-tenant access control, background job queues, and an API gateway,
+        backed by 213 automated tests.
+
+        I also build React.js frontends, including a task-management app and an AI interview-prep app. Experienced with
+        AI-assisted development workflows using ChatGPT, Claude, and Gemini.
       </p>
+
       <div class="status-row">
         <span class="badge"><span class="pulse"></span> open to work</span>
         <span class="badge">node.js</span>
-        <span class="badge">express</span>
-        <span class="badge">mongodb</span>
         <span class="badge">postgresql</span>
         <span class="badge">redis</span>
-        <span class="badge">docker</span>
+        <span class="badge">mongodb</span>
+        <span class="badge">react</span>
+      </div>
+      <div class="stat-row reveal-stagger">
+        <div class="stat">
+          <div class="stat-num">6 months</div>
+          <div class="stat-label">full-stack internship</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">5</div>
+          <div class="stat-label">projects</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">213</div>
+          <div class="stat-label">automated tests</div>
+        </div>
       </div>
     </div>
   </header>
 
-  <section id="about">
-    <div class="wrap">
-      <div class="section-head reveal">
-        <span class="section-tag">01</span>
-        <span class="section-title">about</span>
-      </div>
-      <div class="about-body reveal">
-        <p>Backend developer with a 6-month backend internship at <strong>Himritva</strong> (Jan–Jul 2025) and four
-          independent projects. I work with <strong>Node.js, Express, MongoDB, PostgreSQL and Redis</strong>, and
-          focus on the parts behind the API: authentication, job queues, webhooks, and API gateways.</p>
-        <p>My projects handle failure cases: retries with backoff, dead-letter queues, rate limiting, circuit
-          breakers, and signed webhooks. I have used JWT, OAuth, BullMQ, and Socket.io, and wrote 213 automated tests
-          (Vitest, Supertest) across five projects.</p>
-        <p>I am early in my career. The independent projects are learning builds, not production systems under live
-          traffic. MCA graduate, SNDT Women's University, 2025.</p>
-      </div>
+  <!-- <section id="about">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="section-tag">01</span>
+      <span class="section-title">about</span>
     </div>
-  </section>
+  </div>
+</section> -->
 
   <section id="skills">
     <div class="wrap">
@@ -740,8 +902,9 @@
           <h3>Languages</h3>
           <ul>
             <li>JavaScript (ES6+)</li>
-            <li>SQL</li>
-            <li>Java</li>
+            <li>SQL (PostgreSQL)</li>
+            <li>HTML5 / CSS3</li>
+            <li>JAVA</li>
           </ul>
         </div>
         <div class="skill-group">
@@ -750,51 +913,114 @@
             <li>Node.js / Express</li>
             <li>Socket.io</li>
             <li>JWT Authentication</li>
-            <li>Google OAuth 2.0</li>
-            <li>Gemini API / Resend / ImageKit</li>
+            <li>Google OAuth 2.0 (Passport.js)</li>
+            <li>REST APIs / middleware</li>
           </ul>
         </div>
         <div class="skill-group">
           <h3>Data</h3>
           <ul>
-            <li>MongoDB</li>
+            <li>MongoDB / Mongoose</li>
             <li>PostgreSQL</li>
-            <li>Redis (Upstash)</li>
+            <li>Redis (ioredis, Upstash)</li>
           </ul>
         </div>
         <div class="skill-group">
           <h3>Architecture</h3>
           <ul>
             <li>REST API design</li>
-            <li>Multi-tenancy</li>
-            <li>API Gateway</li>
-            <li>RBAC</li>
             <li>Queue-based processing (BullMQ)</li>
-            <li>Webhook delivery</li>
+            <li>Webhook systems</li>
             <li>Rate limiting</li>
-            <li>Circuit breaker pattern</li>
+            <li>RBAC / multi-tenancy</li>
+            <li>API gateway / circuit breaker</li>
+            <li>Dead-letter queues</li>
           </ul>
         </div>
         <div class="skill-group">
           <h3>Security</h3>
           <ul>
-            <li>JWT / OAuth 2.0</li>
-            <li>Passport.js</li>
-            <li>bcrypt / Helmet</li>
-            <li>Rate limiting</li>
+            <li>bcrypt / Helmet / CORS</li>
+            <li>Input validation (Zod)</li>
             <li>HMAC verification</li>
           </ul>
         </div>
         <div class="skill-group">
-          <h3>Tools &amp; Testing</h3>
+          <h3>Tools</h3>
           <ul>
-            <li>Docker</li>
+            <li>Docker / Docker Compose</li>
             <li>Git / GitHub</li>
             <li>Postman / Swagger</li>
-            <li>Vitest / Supertest</li>
+            <li>Vercel / Render / Railway</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Frontend</h3>
+          <ul>
+            <li>React.js</li>
+
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Testing</h3>
+          <ul>
+            <li>Vitest</li>
+            <li>Supertest</li>
             <li>mongodb-memory-server</li>
           </ul>
         </div>
+        <div class="skill-group">
+          <h3>APIs &amp; AI</h3>
+          <ul>
+            <li>Gemini API</li>
+            <li>Resend / ImageKit</li>
+            <li>ChatGPT, Claude, Gemini (AI-assisted dev)</li>
+            <li>Prompt engineering</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="section-tag">03</span>
+        <span class="section-title">experience</span>
+      </div>
+
+      <div class="role reveal">
+        <div class="role-top">
+          <div class="role-title">Web Developer Intern (Backend) <span class="role-company">@ Himritva</span></div>
+          <div class="role-date">Jan 2025 - Jul 2025</div>
+        </div>
+        <p class="role-sub">Projectify, a multi-tenant task management platform · Node.js, Express, MongoDB, Redis,
+          Socket.io, React.js</p>
+        <ul class="points">
+          <li>Built JWT authentication with 15-min access and 7-day refresh tokens in HttpOnly cookies, plus Google
+            OAuth as a secondary login.</li>
+          <li>Enforced Owner/Admin/Member roles in middleware, keeping permission logic out of controllers.</li>
+          <li>Isolated tenant data using membership checks and workspaceId-filtered queries on every request.</li>
+          <li>Built task APIs with fractional-position ordering, so a drag-reorder writes one document, not the whole
+            board.</li>
+          <li>Delivered real-time task events through project-scoped Socket.io rooms.</li>
+          <li>Contributed to the React.js frontend: drag-and-drop kanban board and live updates using Socket.io-client.
+          </li>
+          <li>Wrote 31 tests (Vitest, Supertest) covering auth, RBAC, tenant isolation, and Socket.io. 31/31 passing.
+          </li>
+        </ul>
+      </div>
+
+      <div class="role reveal">
+        <div class="role-top">
+          <div class="role-title">Freelance Consulting <span class="role-company">design &amp; client delivery</span>
+          </div>
+          <div class="role-date">2021 - 2025</div>
+        </div>
+        <ul class="points">
+          <li>Delivered 6+ client engagements covering requirement gathering, delivery, and stakeholder communication.
+          </li>
+        </ul>
       </div>
     </div>
   </section>
@@ -802,67 +1028,35 @@
   <section id="projects">
     <div class="wrap">
       <div class="section-head reveal">
-        <span class="section-tag">03</span>
+        <span class="section-tag">04</span>
         <span class="section-title">projects</span>
       </div>
 
-      <!-- Status labels: use "Live" only if actually deployed and reachable, otherwise "Built" or "In Development". Don't say "Production" unless it's handling real traffic. -->
-
-      <div class="endpoint endpoint-featured reveal">
-        <div class="endpoint-head">
-          <span class="featured-tag">FEATURED</span>
-          <span class="endpoint-path">/projectify</span>
-          <span class="endpoint-status">Built</span>
-        </div>
-        <div class="endpoint-media">
-          <img src="./assets/banner-projectify.png" alt="Projectify project banner">
-        </div>
-        <div class="endpoint-body">
-          <p class="endpoint-desc">Built a multi-tenant task and project management platform during my backend internship
-            at Himritva. Implemented JWT auth with HttpOnly cookies, Google OAuth, workspace-level RBAC, Kanban task
-            APIs with fractional ordering, and real-time task updates over Socket.io.</p>
-          <ul class="endpoint-features">
-            <li>Multi-tenancy</li>
-            <li>RBAC</li>
-            <li>Socket.io</li>
-            <li>JWT Authentication</li>
-            <li>Google OAuth</li>
-            <li>31 tests</li>
-            <li>Kanban</li>
-            <li>Redis</li>
-          </ul>
-          <div class="endpoint-stack">
-            <span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">MongoDB</span><span
-              class="tag">Redis</span><span class="tag">JWT</span><span class="tag">Socket.io</span><span
-              class="tag">Vitest</span><span class="tag">Supertest</span>
-          </div>
-          <div class="endpoint-links">
-            <a href="https://github.com/Siddhi561/Projectify" data-link="github">→ github</a>
-
-          </div>
-        </div>
-      </div>
+      <!-- GitHub links are filled in. PLACEHOLDER: live demo links (href="#" data-link="demo") stay until each project is deployed -->
 
       <div class="endpoint reveal">
         <div class="endpoint-head">
-          <span class="method">GATE</span>
-          <span class="endpoint-path">/api-gateway</span>
-          <span class="endpoint-status">Built</span>
+          <span class="method">POST</span>
+          <span class="endpoint-path">/projectify</span>
+          <span class="endpoint-status ok">public repo</span>
         </div>
         <div class="endpoint-media">
-          <img src="./assets/banner-api.png" alt="API Gateway project banner">
+          <div class="endpoint-media">
+            <img src="assets/banner-projectify.png" alt="Projectify banner" loading="lazy">
+          </div>
         </div>
         <div class="endpoint-body">
-          <p class="endpoint-desc">Built a centralized API gateway that combines JWT and API-key authentication, Redis
-            sliding-window rate limiting, a circuit breaker for upstream failures, and request proxying. Wrote 94 tests
-            covering auth, rate limits, circuit-breaker states, and proxying.</p>
+          <p class="endpoint-desc">Collaborative project management app with Kanban workflows, role-based access
+            control, JWT auth, and real-time updates over Socket.io.</p>
+          <p class="endpoint-note">built during my Himritva internship, details under experience</p>
           <div class="endpoint-stack">
-            <span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">Upstash Redis</span><span
-              class="tag">Vitest</span><span class="tag">Supertest</span>
+            <span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">MongoDB</span><span
+              class="tag">Socket.io</span><span class="tag">Redis</span><span class="tag">React.js</span><span
+              class="tag tests">31 tests</span>
           </div>
           <div class="endpoint-links">
-
-            <a href="https://github.com/Siddhi561/API-Gateway" data-link="github">→ github</a>
+            <a href="https://github.com/Siddhi561/Projectify" target="_blank" rel="noopener" data-link="github">→
+              github</a>
 
           </div>
         </div>
@@ -872,22 +1066,31 @@
         <div class="endpoint-head">
           <span class="method">QUEUE</span>
           <span class="endpoint-path">/job-queue</span>
-          <span class="endpoint-status">Built</span>
+          <span class="endpoint-status ok">public repo</span>
         </div>
         <div class="endpoint-media">
-          <img src="./assets/banner-queue.png" alt="Job Queue project banner">
+          <div class="endpoint-media">
+            <img src="assets/banner-queue.png" alt="Queue banner" loading="lazy">
+          </div>
         </div>
         <div class="endpoint-body">
-          <p class="endpoint-desc">Built an asynchronous email delivery service that queues jobs with BullMQ and Redis and
-            returns immediately. Added priority queues, exponential-backoff retries, a dead-letter queue, and
-            PostgreSQL job tracking. Wrote 27 unit and integration tests.</p>
+          <p class="endpoint-desc">Background job processing service using Redis queues and BullMQ workers, with
+            retries, dead-letter queues, and PostgreSQL persistence for async email delivery.</p>
+          <ul class="points">
+            <li>Queues the job and returns 202 immediately.</li>
+            <li>Priority queuing (1-10) and 5-way worker concurrency.</li>
+            <li>Exponential-backoff retries (5s, 25s, 125s) with a dead-letter queue after 3 failures.</li>
+            <li>Writes the job row to PostgreSQL before queuing, so no job is orphaned.</li>
+          </ul>
           <div class="endpoint-stack">
             <span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">BullMQ</span><span
-              class="tag">Redis</span><span class="tag">PostgreSQL</span><span class="tag">Vitest</span>
+              class="tag">Redis</span><span class="tag">PostgreSQL</span><span class="tag">Resend</span><span
+              class="tag tests">27 tests</span>
           </div>
           <div class="endpoint-links">
+            <a href="https://github.com/Siddhi561/Email-Queue-System" target="_blank" rel="noopener"
+              data-link="github">→ github</a>
 
-            <a href="https://github.com/Siddhi561/Email-Queue-System" data-link="github">→ github</a>
           </div>
         </div>
       </div>
@@ -896,23 +1099,58 @@
         <div class="endpoint-head">
           <span class="method">HOOK</span>
           <span class="endpoint-path">/webhook-service</span>
-          <span class="endpoint-status">Built</span>
+          <span class="endpoint-status ok">public repo</span>
         </div>
         <div class="endpoint-media">
-          <img src="./assets/banner-webhook.png" alt="Webhook Service project banner">
+          <div class="endpoint-media">
+            <img src="assets/banner-webhook.png" alt="Webhook banner" loading="lazy">
+          </div>
         </div>
         <div class="endpoint-body">
-          <p class="endpoint-desc">Built a webhook delivery service that queues one BullMQ job per subscriber per event, so
-            one failing subscriber does not block the others. Signed payloads with HMAC-SHA256, rejected stale requests
-            with a 5-minute timestamp window, added exponential-backoff retries, and stored delivery history in
-            MongoDB. Wrote 35 unit and integration tests.</p>
+          <p class="endpoint-desc">Webhook delivery platform with HMAC signature verification, exponential backoff
+            retries, and event persistence for third-party integrations.</p>
+          <ul class="points">
+            <li>One job per subscriber per event, so one failing subscriber does not block the others.</li>
+            <li>Payloads signed with HMAC-SHA256; requests older than 5 minutes are rejected.</li>
+            <li>5-stage exponential backoff per subscriber, with full delivery history stored in MongoDB.</li>
+          </ul>
           <div class="endpoint-stack">
             <span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">BullMQ</span><span
-              class="tag">Redis</span><span class="tag">MongoDB</span><span class="tag">Vitest</span>
+              class="tag">Redis</span><span class="tag">MongoDB</span><span class="tag tests">35 tests</span>
           </div>
           <div class="endpoint-links">
+            <a href="https://github.com/Siddhi561/Webhook-Delivery-Service" target="_blank" rel="noopener"
+              data-link="github">→ github</a>
 
-            <a href="https://github.com/Siddhi561/Webhook-Delivery-Service" data-link="github">→ github</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="endpoint reveal">
+        <div class="endpoint-head">
+          <span class="method">GATE</span>
+          <span class="endpoint-path">/api-gateway</span>
+          <span class="endpoint-status ok">public repo</span>
+        </div>
+        <div class="endpoint-media">
+          <img src="assets/banner-api.png" alt="API Gateway banner" loading="lazy">
+        </div>
+        <div class="endpoint-body">
+          <p class="endpoint-desc">Centralized API gateway with JWT auth, Redis-based rate limiting, a circuit breaker
+            pattern, and request proxying.</p>
+          <ul class="points">
+            <li>Redis sliding-window rate limiting, closing the burst bypass of fixed windows.</li>
+            <li>Circuit breaker opens after 3 failures, with a 30s cooldown and 8s upstream timeout.</li>
+            <li>crypto.timingSafeEqual for API-key checks; auth headers stripped before proxying.</li>
+          </ul>
+          <div class="endpoint-stack">
+            <span class="tag">Node.js</span><span class="tag">Redis</span><span class="tag">Express</span><span
+              class="tag">Zod</span><span class="tag">Winston</span><span class="tag tests">94 tests</span>
+          </div>
+          <div class="endpoint-links">
+            <a href="https://github.com/Siddhi561/API-Gateway" target="_blank" rel="noopener" data-link="github">→
+              github</a>
+
           </div>
         </div>
       </div>
@@ -921,64 +1159,93 @@
         <div class="endpoint-head">
           <span class="method">GET</span>
           <span class="endpoint-path">/ai-interview-prep</span>
-          <span class="endpoint-status">built</span>
+          <span class="endpoint-status ok">public repo</span>
         </div>
         <div class="endpoint-media">
-          <img src="./assets/banner-ai.png" alt="AI Interview Prep project banner">
+          <div class="endpoint-media">
+            <img src="assets/banner-ai.png" alt="ai banner" loading="lazy">
+          </div>
         </div>
         <div class="endpoint-body">
-          <p class="endpoint-desc">Built an interview preparation platform that uses the Gemini API to generate
-            personalized questions, with authentication and session management. Wrote 26 tests covering Gemini
-            mocking, malformed AI output, and authorization.</p>
+          <p class="endpoint-desc">AI-assisted interview preparation platform using the Google Gemini API for
+            personalized technical question generation, with session management and auth.</p>
+          <ul class="points">
+            <li>React.js frontend built with Redux Toolkit, TanStack Query, and Tailwind CSS.</li>
+            <li>Tests cover Gemini mocking, malformed model output, and authorization.</li>
+          </ul>
           <div class="endpoint-stack">
             <span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">Gemini API</span><span
-              class="tag">MongoDB</span><span class="tag">Vitest</span>
+              class="tag">MongoDB</span><span class="tag">React.js</span><span class="tag tests">26 tests</span>
           </div>
           <div class="endpoint-links">
-            <a href="https://github.com/Siddhi561/AI_InterviewPrep" data-link="github">→ github</a>
+            <a href="https://github.com/Siddhi561/AI_InterviewPrep" target="_blank" rel="noopener" data-link="github">→
+              github</a>
 
           </div>
         </div>
       </div>
 
+    </div>
+  </section>
+
+  <section id="education">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="section-tag">05</span>
+        <span class="section-title">education</span>
+      </div>
+      <div class="edu-grid reveal-stagger">
+        <div class="edu-card">
+          <div class="edu-degree">MCA</div>
+          <div class="edu-school">Master of Computer Applications · SNDT Women's University, Mumbai</div>
+          <div class="edu-meta">2025 · CGPA 8.13</div>
+        </div>
+        <div class="edu-card">
+          <div class="edu-degree">BCA</div>
+          <div class="edu-school">Bachelor of Computer Applications · SNDT Women's University, Mumbai</div>
+          <div class="edu-meta">2022 · CGPA 9.11</div>
+        </div>
+        <div class="edu-card wide">
+          <div class="edu-degree">Leadership &amp; achievements</div>
+          <ul class="points" style="margin-top:10px">
+            <li>Placement Head (MCA)</li>
+            <li>President, Infomaniac IT Club</li>
+            <li>Department Best Designer</li>
+            <li>College Fest Lead Organizer &amp; Anchor</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </section>
 
   <section id="contact">
     <div class="wrap">
       <div class="section-head reveal">
-        <span class="section-tag">04</span>
+        <span class="section-tag">06</span>
         <span class="section-title">contact</span>
       </div>
       <div class="contact-grid reveal-stagger">
         <div class="contact-card">
           <div class="label">GitHub</div>
-          <!-- GITHUB -->
           <a href="https://github.com/Siddhi561" target="_blank" rel="noopener">github.com/Siddhi561</a>
         </div>
         <div class="contact-card">
           <div class="label">LinkedIn</div>
-          <!-- LINKEDIN: replace YOUR_LINK with your real LinkedIn handle -->
-          <a href="https://www.linkedin.com/in/siddhi--singh" target="_blank" rel="noopener"
+          <a href="https://www.linkedin.com/in/siddhi--singh/" target="_blank" rel="noopener"
             data-link="linkedin">linkedin.com/in/siddhi--singh</a>
         </div>
         <div class="contact-card">
           <div class="label">Email</div>
-          <!-- EMAIL: replace YOUR_EMAIL with your real address -->
-          <a href="mailto:siddhisingh5@outlook.com" data-link="email">
-            siddhisingh5@outlook.com
-          </a>
+          <a href="mailto:siddhisingh5@outlook.com" data-link="email">siddhisingh5@outlook.com</a>
         </div>
       </div>
-      <a href="assets/Siddhi_Singh_Backend_Resume.pdf" class="resume-btn" data-link="resume">↓ download resume</a>
+      <a href="assets/SiddhiSingh__fullStack.pdf" class="resume-btn" data-link="resume" download>↓ download resume</a>
     </div>
   </section>
 
   <footer>
     <div class="wrap">
-      <p>Designed &amp; Built by Siddhi Singh</p>
-      <p style="margin-top: 6px;">Node.js • Express • MongoDB • PostgreSQL • Redis</p>
-      <p style="margin-top: 6px;">Always building. Always learning.</p>
+      <p>Built by Siddhi Singh · updated 2026</p>
     </div>
   </footer>
 
@@ -1010,20 +1277,20 @@
 
         if (reduceMotion) {
           l1.textContent = 'whoami';
-          l2wrap.style.visibility = 'visible'; l2.textContent = 'siddhi_singh — backend developer';
+          l2wrap.style.visibility = 'visible'; l2.textContent = 'siddhi_singh — full stack developer (backend-focused)';
           l3wrap.style.visibility = 'visible'; l3.textContent = 'status --role';
-          l4wrap.style.visibility = 'visible'; l4.textContent = 'early-career · actively building · open to opportunities';
+          l4wrap.style.visibility = 'visible'; l4.textContent = 'full-stack intern (6 months) · 5 projects · 213 tests · open to work';
           return;
         }
 
         typeInto(l1, 'whoami', 55, function () {
           l2wrap.style.visibility = 'visible';
-          typeInto(l2, 'siddhi_singh — backend developer', 22, function () {
+          typeInto(l2, 'siddhi_singh — full stack developer', 22, function () {
             setTimeout(function () {
               l3wrap.style.visibility = 'visible';
               typeInto(l3, 'status --role', 55, function () {
                 l4wrap.style.visibility = 'visible';
-                typeInto(l4, 'early-career · actively building · open to opportunities', 22);
+                typeInto(l4, 'full-stack intern (6 months) · 5 projects · 213 tests · open to work', 22);
               });
             }, 300);
           });
@@ -1031,6 +1298,11 @@
       }
 
       document.addEventListener('DOMContentLoaded', runTyping);
+
+      // placeholder links (href="#") do nothing until real URLs are added
+      document.querySelectorAll('a[href="#"]').forEach(function (a) {
+        a.addEventListener('click', function (e) { e.preventDefault(); });
+      });
 
       // ---------- Scroll reveal ----------
       var revealEls = document.querySelectorAll('.reveal, .reveal-stagger');
