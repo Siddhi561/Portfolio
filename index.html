@@ -802,6 +802,11 @@
       color: var(--accent);
       margin-top: 8px;
     }
+
+    /* contact section: fix mobile overflow */
+.contact-grid { grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); }
+.contact-card { min-width: 0; }
+.contact-card a, .contact-card span { overflow-wrap: anywhere; }
   </style>
 </head>
 
